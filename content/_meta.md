@@ -1,8 +1,11 @@
 ---
-Logo: image/leaf_256x256.png
-Tagline: My portfolio.
+Logo: image/logo.jpg
+Tagline: Valério Wallin.
 Social:
-    - title: Link till sidans github repo.
-      url: https://github.com/dbwebb-se/design-v3
+    - title: Link to my github repo.
+      url: https://github.com/valjason/dbwebb-design
       icon: github
+    - title: Link to my instagram.
+      url: https://www.instagram.com/viane.viana/?hl=en
+      icon: instagram
 ---

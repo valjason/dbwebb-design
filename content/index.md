@@ -3,11 +3,23 @@ Title: Home
 Description: This is our index page.
 ---
 
-Home page
+Olá
 ==========================
 
-The source for this page is in `content/index.md`.
+My name is `Valério Wallin`
 
-This is a sample home page written in markdown with some frontmatter defined.
+And I'm a student at BTH and currently studying design through a webb programming course.
 
-The pages make up a Anax site for demonstration purpose, it is something to start from.
+I'm also someone who likes to likes the sun, shrimp sandwich and a cup of coffee.
+
+Maybe this is what I'm going to aim for tomorrow.
+
+At the moment I'm trying to learn Pico.
+
+It's a bit difficult with git
+
+But baby steps.
+
+Programming
+
+Is very fun
