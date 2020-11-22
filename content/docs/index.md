@@ -1,5 +1,5 @@
 ---
-Title: Docs
+Title: Docs &#8981;
 Description: Documentation that came with Pico.
 # hidden: true
 ---
