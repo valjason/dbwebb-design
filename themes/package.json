@@ -1,14 +1,12 @@
 {
   "name": "themes",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
-    "style": "sass valerio/scss/style.scss valerio/css/style.css --no-source-map",
-    "style-min": "sass valerio/scss/style.scss valerio/css/style.min.css --no-source-map --style compressed"
-
+    "style": "sass sass-val/scss/style.scss sass-val/css/style.css --no-source-map",
+    "style-min": "sass sass-val/scss/style.scss sass-val/css/style.min.css --no-source-map --style compressed"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +16,9 @@
     "sass": "^1.29.0",
     "stylelint": "^13.7.2",
     "stylelint-config-sass-guidelines": "^7.1.0"
-  }
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1"
+  },
+  "description": ""
 }

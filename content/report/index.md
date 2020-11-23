@@ -6,12 +6,12 @@ Description: Reporting.
 
 [Kmom 01](report/sub/kmom01)
 ==================
-<b>Content</b>
+<b>Pico</b>
 <!-- `{{ "sub/page"|link }}` -->
 
 [Kmom 02](report/sub/kmom02)
 ==================
-<b>Content</b>
+<b>SASS, NPM & Fonts</b>
 
 [Kmom 03](report/sub/kmom03)
 ==================
