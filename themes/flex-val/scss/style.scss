@@ -1,0 +1,43 @@
+
+@import '../../shared/scss/base';
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+// @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cinzel&display=swap');
+@import 'report';
+
+* {
+    font-family: 'Architects Daughter', cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, {
+    font-family: 'Cinzel', serif;
+}
+
+p {
+    font-family: 'Architects Daughter', cursive;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

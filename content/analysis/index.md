@@ -1,14 +1,14 @@
 ---
-Title: Report
-Description: Reporting.
+Title: Analysis
+Description: Analysis
 Template: report
 ---
 
-Report
+Analysis
 ====================
 
 <div class="kmom-box">
-    <a href="report/kmom01"><h1>Kmom1</h1></a>
+    <a href="analysis/01_colors"><h1>Kmom1</h1></a>
     <p> Något om kursmomentet...</p>
 </div>
 
