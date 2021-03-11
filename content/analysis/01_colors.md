@@ -10,9 +10,12 @@ Urvalet består av webbsidor med olika syften, behov och målgrupper. Detta för
 
 Den första webbplatsen som studeras är Folkhälsomyndighetens sida, sedan undersöks hemsidor tillhörande Filmstaden och Monki. 
 
-Folkhälsomyndigheten: https://www.folkhalsomyndigheten.se/
-Monki: https://www.monki.com/en_sek/index.html
-Filmstaden: https://www.filmstaden.se/
+Folkhälsomyndigheten: https://www.folkhalsomyndigheten.se/  
+
+Monki: https://www.monki.com/en_sek/index.html  
+
+Filmstaden: https://www.filmstaden.se/  
+
 
 Metod
 ----------------------
@@ -20,6 +23,7 @@ För att utföra undersökningen användas färgpsykologi men också verktyget A
 
 Resultat
 ----------------------
+![folkhalsomyndigheten](./../content/analysis/folkhalsomyndigheten.jpg)
  
 På Folkhälsomyndighetens hemsida är den primära färgen vit. Det finns flera ljusgråa partier som har en mer sekundär roll. En del knappar och länkar har accentfärgen blå. Blå är den färg som knapparna har, som man vill att besökarna ser och det finns vita call to action länkarna.
 
@@ -27,10 +31,12 @@ Primärfärg: #ffffff
 Sekundärfärg: #eaeef4
 Accentfärg: #2d5492
 
+![monki](./../content/analysis/monki.jpg)
  
 
 Monki har primär färgen vit men har sedan flera färgstarka inslag, av rosa och gult och lite blåa samt lila toner. 
  
+![filmstaden](./../content/analysis/filmstaden.jpg)
 Filmstadens hemsida är till stor del svart, det är stora mörka partier. Sedan har mindre inslag av både rött och vitt.
 
 Analys
@@ -45,8 +51,10 @@ Studerar man sedan Filmstadens hemsida så är den till skillnad från övriga a
 
 Referenser
 ----------------------
-Adobe Color:https://color.adobe.com/sv/create/color-wheel
-Färgpsykologi: https://www.empower-yourself-with-color-psychology.com/
+Adobe Color:https://color.adobe.com/sv/create/color-wheel  
+
+Färgpsykologi: https://www.empower-yourself-with-color-psychology.com/  
+
 
 Valério Wallin
 
