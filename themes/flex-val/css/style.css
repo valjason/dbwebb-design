@@ -445,7 +445,6 @@ body {
   max-width: 48em;
   padding: 0 0.5em;
   margin: 0 auto;
-  height: 100%;
   overflow: hidden;
   border: thin solid #000;
 }
@@ -552,7 +551,8 @@ body {
 }
 
 .flash-img {
-  height: 100%;
+  background-image: url("tree2.jpg");
+  height: 40px;
 }
 
 /*** BASIC LAYOUT: FOOTER ***/
@@ -986,6 +986,46 @@ button::-moz-focus-inner {
   padding: 0;
 }
 
+.landingpage {
+  display: grid;
+  background-color: #fff;
+  /*color: black;*/
+  gap: 1em 1em;
+  border-color: #000;
+  border: 1px solid #000;
+  /*    padding: 0 1em;*/
+  /*    border-color: black;*/
+}
+
+.landingpage h1 {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+.kmom-box {
+  grid-column: span 1;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+
+.kmom-box a {
+  text-decoration: underline;
+}
+
+.kmom-box.project {
+  grid-column: span 3;
+}
+
+@media (max-width: 767px) {
+  .landingpage h1,
+.kmom-box,
+.kmom-box.project {
+    grid-column: span 1;
+  }
+}
 /*!
  * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -7104,42 +7144,7 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-.landingpage {
-  display: grid;
-  background-color: white;
-  gap: 1em 1em;
-  padding: 0 1em;
-}
-
-.landingpage h1 {
-  grid-column: span 3;
-  justify-self: center;
-}
-
-.kmom-box {
-  grid-column: span 1;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1em;
-}
-
-.kmom-box a {
-  text-decoration: underline;
-}
-
-.kmom-box.project {
-  grid-column: span 3;
-}
-
-@media (max-width: 767px) {
-  .landingpage h1,
-.kmom-box,
-.kmom-box.project {
-    grid-column: span 1;
-  }
-}
+/*@import 'report';*/
 * {
   font-family: "Architects Daughter", cursive;
 }

@@ -14,4 +14,10 @@ Social:
     - title: Link to my GoogleFonts.
       url: https://fonts.google.com/
       icon: fas fa-font
+    - title: Dark Mode
+      url: ?action=theme
+      icon: fas fa-moon
+    - title: Destroy Session
+      url: ?action=session_destroy
+      icon: fas fa-trash-alt
 ---

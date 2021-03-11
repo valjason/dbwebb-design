@@ -1,0 +1,35 @@
+{
+  "name": "themes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "normalize.css": "^8.0.1",
+    "sass": "^1.32.8",
+    "stylelint": "^13.12.0",
+    "stylelint-config-sass-guidelines": "^7.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "stylelint \"**/*.scss\"",
+
+    "watch": "sass flex-val/scss/style.scss:flex-val/css/style.css flex-val/scss/style-dark.scss:flex-val/css/style-dark.css --no-source-map --watch",
+    "watch-min": "sass flex-val/scss/style.scss:flex-val/css/style.min.css flex-val/scss/style-dark.scss:flex-val/css/style-dark.min.css --no-source-map --watch --style compressed",
+    "style": "npm run style-light && npm run style-dark",
+    "style-min": "npm run style-light-min && npm run style-dark-min",
+
+  "style-dark": "sass flex-val/scss/style-dark.scss flex-val/css/style-dark.css --no-source-map",
+  "style-dark-min": "sass flex-val/scss/style-dark.scss flex-val/css/style-dark.min.css --no-source-map --style compressed",
+
+  "style-light": "sass flex-val/scss/style.scss flex-val/css/style.css --no-source-map",
+  "style-light-min": "sass flex-val/scss/style.scss flex-val/css/style.min.css --no-source-map --style compressed"
+},
+
+
+  {
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+
+}

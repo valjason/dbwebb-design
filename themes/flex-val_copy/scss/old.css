@@ -1,56 +1,3 @@
-/*
-Så nu börjar det.
-Vad jag behöver göra är att konvertera allt till SCSS syntax, från CSS.
-Här kommer jag skriva upp alla syntax skillnaderna jag upptäcker och tänker använda mig utav.
-Utöver detta så tänker jag att jag behöver se till att det blir effektivare kod.
-
-x Stäng med ;
-- @mixin
-- @include
-- &:hover { cursor: pointer; }
-- &:disabled {}
-x Variable declarations, like $var: value. //Har testat skapa färgvariabler.
-- Flow control at-rules, like @if and @each.
-- The @error, @warn, and @debug rules.
-
-
-
-
-
-*/
-.ruler {
-    // 576px window width and more
-    @include sm {
-        padding: 0 20px;
-    }
-    // 992px window width and more
-    @include lg {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 1100px;
-    }
-    // 1400px window width and more
-    @include rwd(1400) {
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-}
-
-.auto {
-    margin: auto;
-    text-align: center;
-}
-
-
-// .letterBG {
-//
-//     background-image: url('bgLetters.png');
-//
-//     background-attachment: fixed;
-//     z-index: 1;
-// }
-
-
 * {
     box-sizing: border-box;
     border: 0 none;
@@ -84,45 +31,31 @@ x Variable declarations, like $var: value. //Har testat skapa färgvariabler.
 
 /*** BASIC LAYOUT ***/
 
-html {
-    background-image: url('bgLetters.png');
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow-y: scroll;
+html, body {
     height: 100%;
-
-
-
 }
 
-
-
 body {
-    height: 100%;
     display: flex;
     flex-direction: column;
-
-
 }
 
 .main {
     flex: 1 0 auto;
 }
 
-.header,
-.footer {
+.header, .footer {
     flex: 0 0 auto;
-    overflow: hidden;
+}
+
+.main {
+    padding: 5em 0 4em;
 }
 
 .container {
     max-width: 48em;
     padding: 0 0.5em;
     margin: 0 auto;
-    overflow: hidden;
-    border: thin solid #000;
 }
 
 .widescreen .container {
@@ -133,29 +66,22 @@ body {
 
 .main .container {
     overflow-x: auto;
-    background-color: #fff; /*Containerns bakgrund blir vit såhär.*/
-
 }
 
 /*** BASIC LAYOUT: HEADER ***/
 
 .header {
     background: #fff;
-
-    margin-left: auto;
-    margin-right: auto; /*Det här fungerade ännu bättre än att specificera, toppen!*/
-
 }
 
-.title,
-.logo {
+.title, .logo {
     float: left;
     padding: 3em 3em 3em 0;
 }
 
 .title * {
     margin: 0;
-    color: $title-black;
+    color: #111;
 }
 
 .title p {
@@ -174,8 +100,6 @@ body {
 .logo img {
     min-width: 4.8em;
 }
-
-
 
 .logo+.title h1 {
     margin: 0.8rem 0;
@@ -203,20 +127,16 @@ body {
     font-weight: bold;
 }
 
-.nav a,
-.nav-toggle {
-    color: $special-grey;
+.nav a, .nav-toggle {
+    color: #333;
 }
 
-.nav .active a,
-.nav a:hover,
-.nav-toggle:hover {
-    color: $dirty-yellow;
+.nav .active a, .nav a:hover, .nav-toggle:hover {
+    color: #3b440d;
 }
 
-.nav a:hover,
-.nav-toggle:hover {
-    color: $dirty-yellow;
+.nav a:hover, .nav-toggle:hover {
+    color: #3b440d;
     text-decoration: underline;
 }
 
@@ -233,32 +153,18 @@ body {
 }
 
 .flash-img {
-    background-image: url('tree2.jpg');
- 
-    height: 40px;
+    height: 100%;
 }
 
 /*** BASIC LAYOUT: FOOTER ***/
 
 .footer {
-
-    background-image: url('footer.png');
-    // overflow: hidden;
-    color: #fff;
-    // border: 50px;
-    // width:768px; margin:0 auto; //det är den här som här boven, width? :/
-    max-width: 48em;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    // flex: 0 0 auto;
-    // text-align: center;
-    // margin: 0 auto;
-
+    background: #707070;
+    color: #c0c0c0;
 }
 
 .footer a {
-    color: $footer-white;
+    color: #ddd;
 }
 
 .footer a:hover {
@@ -274,41 +180,36 @@ body {
     float: right;
     padding: 1.5em 0 1.5em 1em;
     font-size: 2rem;
-
 }
 
 /*** BASIC LAYOUT: EXTRA SMALL DEVICES ***/
 
 @media (max-width: 767px) {
-    .title,
-    .logo {
+    .main {
+        padding: 2em 0 1em;
+    }
+    .title, .logo {
         padding: 2em 1.5em 2em 0;
     }
-
     .logo {
         height: 8.8em;
     }
-
     .nav {
         clear: both;
         padding: 0;
     }
-
     .nav ul {
         padding-bottom: 1em;
     }
-
     .nav ul li {
         display: block;
         margin-left: 0;
         text-align: center;
     }
-
     .nav ul li a {
         display: block;
         padding: 0.5em 0;
     }
-
     .js .nav-toggle {
         display: block;
         float: right;
@@ -319,15 +220,12 @@ body {
         text-align: center;
         cursor: pointer;
     }
-
     .js .nav-toggle>* {
         vertical-align: middle;
     }
-
     .footer p {
         padding: 1em 0;
     }
-
     .footer .social {
         padding: 0.5em 0 0.5em 1em;
     }
@@ -340,98 +238,79 @@ html {
 }
 
 body {
+    font-family: sans-serif;
     font-size: 1rem;
     line-height: 1.6;
     font-variant-ligatures: common-ligatures;
     text-rendering: optimizeLegibility;
     font-kerning: normal;
-    color: $body-black;
+    color: #444;
 }
 
-p,
-td,
-th,
-li,
-dd {
+p, td, th, li, dd {
     text-align: justify;
     overflow-wrap: break-word;
     word-wrap: break-word;
-    font-family: Didot;
-
 }
 
-p,
-hr,
-table,
-.table-responsive,
-ol,
-ul,
-dl,
-dd,
-pre,
-blockquote,
-fieldset {
+p, hr, table, .table-responsive, ol, ul, dl, dd, pre, blockquote, fieldset {
     margin-bottom: 1em;
-
 }
 
 a {
-    color: $link-blue;
+    color: #2eae9b;
     text-decoration: none;
     transition: color 0.2s ease-in;
 }
 
 a:hover {
-    color: $body-black;
+    color: #444;
 }
 
-//
-// h2 {
-//     font-size: 1.7rem;
-//     font-family: Didot;
-//
-// }
-//
-// h3 {
-//     font-size: 1.4rem;
-//     font-family: Didot;
-//
-// }
-//
-// h4 {
-//     font-size: 1.1rem;
-//     font-family: Didot;
-//
-// }
-//
-// h5 {
-//     font-size: 1rem;
-//     font-family: Didot;
-//
-// }
-//
-// h6 {
-//     font-size: 1rem;
-//     font-weight: normal;
-//     font-style: italic;
-//     font-family: Didot;
-//
-// }
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.6em;
+    font-weight: bold;
+    color: #333;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: italic;
+}
 
 img {
     max-width: 100%;
 }
 
 hr {
-    border: 0.15em solid $hr-line-hue;
+    border: 0.15em solid #f5f5f5;
     border-radius: 0.3em;
-    background: $hr-line-hue;
+    background: #f5f5f5;
 }
 
 abbr {
     text-decoration: underline dotted;
-    font-family: Didot;
-
 }
 
 /*** UTILITIES ***/
@@ -483,27 +362,22 @@ abbr {
     margin: 1em 0 1em 2em;
 }
 
-// .image img {
-//     display: block;
-//     width: 100%;
-// } ??????
+.image img {
+    display: block;
+    width: 100%;
+}
 
 @media (max-width: 767px) {
     .image.xsmall {
         width: 60%;
     }
-
     .image.small {
         width: 80%;
     }
-
-    .image.large,
-    .image.xlarge {
+    .image.large, .image.xlarge {
         width: 100%;
     }
-
-    .image.float-left,
-    .image.float-right {
+    .image.float-left, .image.float-right {
         float: none;
         margin: 0 auto;
     }
@@ -515,8 +389,7 @@ table {
     border-spacing: 0;
 }
 
-td,
-th {
+td, th {
     padding: 0.4em 1em;
     vertical-align: top;
 }
@@ -524,17 +397,15 @@ th {
 th {
     font-weight: bold;
     text-align: center;
-    background: $hr-line-hue;
-    color: $special-grey;
+    background: #f5f5f5;
+    color: #333;
 }
 
-td,
-th {
-    border: 1px solid $footer-white;
+td, th {
+    border: 1px solid #ccc;
 }
 
-tr:not(:last-child) td,
-tr:not(:last-child) th {
+tr:not(:last-child) td, tr:not(:last-child) th {
     border-bottom: 0 none;
 }
 
@@ -542,18 +413,15 @@ thead tr:last-child th {
     border-bottom: 0 none;
 }
 
-td:not(:last-child),
-th:not(:last-child) {
+td:not(:last-child), th:not(:last-child) {
     border-right: 0 none;
 }
 
-tr:first-child td:first-child,
-tr:first-child th:first-child {
+tr:first-child td:first-child, tr:first-child th:first-child {
     border-top-left-radius: 0.3em;
 }
 
-tr:first-child td:last-child,
-tr:first-child th:last-child {
+tr:first-child td:last-child, tr:first-child th:last-child {
     border-top-right-radius: 0.3em;
 }
 
@@ -579,8 +447,7 @@ table thead+tbody tr:first-child td {
 
 /*** LISTS ***/
 
-ol,
-ul {
+ol, ul {
     list-style-position: outside;
     padding-left: 1.5em;
 }
@@ -606,9 +473,9 @@ dd {
 code {
     margin: 0 0.1em;
     padding: 0.1em 0.2em;
-    border: 1px solid $footer-white;
+    border: 1px solid #ccc;
     border-radius: 0.3em;
-    background: $hr-line-hue;
+    background: #f5f5f5;
     font-family: monospace;
     font-size: 0.85rem;
     line-height: 1.9824;
@@ -616,9 +483,9 @@ code {
 
 pre {
     padding: 0 1em;
-    border: 1px solid $footer-white;
+    border: 1px solid #ccc;
     border-radius: 0.3em;
-    background: $hr-line-hue;
+    background: #f5f5f5;
 }
 
 pre code {
@@ -637,23 +504,16 @@ blockquote {
     font-style: italic;
     margin-left: 1em;
     padding-left: 1em;
-    border-left: 0.5em solid $hr-line-hue;
+    border-left: 0.5em solid #f5f5f5;
 }
 
 /*** FORMS ***/
 
-label,
-fieldset legend {
+label, fieldset legend {
     font-weight: bold;
 }
 
-input:not([type='checkbox']):not([type='radio']),
-button,
-select,
-textarea,
-fieldset,
-fieldset
-legend {
+input:not([type='checkbox']):not([type='radio']), button, select, textarea, fieldset, fieldset legend {
     border: 1px solid #ccc;
     border-radius: 0.3em;
     background: #fff;
@@ -661,129 +521,51 @@ legend {
     transition-property: border-color, background, box-shadow;
 }
 
-input:not([type='checkbox']):not([type='radio']),
-button,
-select,
-textarea {
+input:not([type='checkbox']):not([type='radio']), button, select, textarea {
     padding: 0.5em 1em;
     outline: 0 none;
     font-size: 1rem;
 }
 
-input:focus:not([type='checkbox']):not([type='radio']),
-button:focus,
-select:focus,
-textarea:focus {
-    border-color: $link-blue;
-    box-shadow: 0 0 8px $link-blue;
+input:focus:not([type='checkbox']):not([type='radio']), button:focus, select:focus, textarea:focus {
+    border-color: #2eae9b;
+    box-shadow: 0 0 8px #2eae9b;
 }
 
-input:focus,
-button:focus,
-button:hover {
-    background: $hr-line-hue;
+input:focus, button:focus, button:hover {
+    background: #f5f5f5;
     cursor: pointer;
 }
 
-textarea,
-select {
+textarea, select {
     vertical-align: bottom;
     overflow: auto;
 }
 
 fieldset {
     padding: 1em;
-    background: $hr-line-hue;
+    background: #f5f5f5;
 }
 
 fieldset legend {
     padding: 0 0.5em;
 }
 
-fieldset label,
-fieldset input,
-fieldset button,
-fieldset select,
-fieldset textarea {
+fieldset label, fieldset input, fieldset button, fieldset select, fieldset textarea {
     margin: 0.2em 0.5em;
 }
 
-fieldset label:first-child,
-fieldset input:first-child,
-fieldset button:first-child,
-fieldset select:first-child,
-fieldset textarea:first-child {
+fieldset label:first-child, fieldset input:first-child, fieldset button:first-child, fieldset select:first-child, fieldset textarea:first-child {
     margin-left: 0;
 }
 
-fieldset label:last-child,
-fieldset input:last-child,
-fieldset button:last-child,
-fieldset select:last-child,
-fieldset textarea:last-child {
+fieldset label:last-child, fieldset input:last-child, fieldset button:last-child, fieldset select:last-child, fieldset textarea:last-child {
     margin-right: 0;
 }
 
 /* Firefox input size fix */
 
-input::-moz-focus-inner,
-button::-moz-focus-inner {
+input::-moz-focus-inner, button::-moz-focus-inner {
     border: 0;
     padding: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-.landingpage {
-    display: grid;
-    background-color: #fff;
-    /*color: black;*/
-
-    gap: 1em 1em;
-    border-color: #000;
-    border: 1px solid #000;
-    /*    padding: 0 1em;*/
-    /*    border-color: black;*/
-}
-   
-  
-.landingpage h1 {
-    grid-column: span 3;
-    justify-self: center;
-}
-  
-.kmom-box {
-    grid-column: span 1;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em;
-}
-  
-.kmom-box a {
-    text-decoration: underline;
-}
-   
-.kmom-box.project {
-    grid-column: span 3;
-}
-  
-@media(max-width: 767px) {
-    .landingpage h1,
-    .kmom-box,
-    .kmom-box.project {
-        grid-column: span 1;
-    }
-  
-}
-
-

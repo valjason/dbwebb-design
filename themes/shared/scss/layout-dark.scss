@@ -85,14 +85,13 @@ x Variable declarations, like $var: value. //Har testat skapa färgvariabler.
 /*** BASIC LAYOUT ***/
 
 html {
-    background-image: url('bgLetters.png');
+    background-image: url('bgLetters-dark.jpg');
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     overflow-y: scroll;
     height: 100%;
-
 
 
 }
@@ -122,7 +121,11 @@ body {
     padding: 0 0.5em;
     margin: 0 auto;
     overflow: hidden;
+
     border: thin solid #000;
+
+
+
 }
 
 .widescreen .container {
@@ -133,14 +136,14 @@ body {
 
 .main .container {
     overflow-x: auto;
-    background-color: #fff; /*Containerns bakgrund blir vit såhär.*/
+    background-color: $dark-mode-body; /*Containerns bakgrund blir vit såhär.*/
 
 }
 
 /*** BASIC LAYOUT: HEADER ***/
 
 .header {
-    background: #fff;
+    background: $dark-mode-body;
 
     margin-left: auto;
     margin-right: auto; /*Det här fungerade ännu bättre än att specificera, toppen!*/
@@ -160,6 +163,7 @@ body {
 
 .title p {
     font-style: italic;
+    color: $dark-mode-text;
 }
 
 .logo {
@@ -179,10 +183,12 @@ body {
 
 .logo+.title h1 {
     margin: 0.8rem 0;
+    color: $dark-mode-text;
 }
 
 .logo+.title.tagline h1 {
     margin: 0;
+    color: $dark-mode-text;
 }
 
 .nav {
@@ -211,12 +217,12 @@ body {
 .nav .active a,
 .nav a:hover,
 .nav-toggle:hover {
-    color: $dirty-yellow;
+    color: $dark-mode-text;
 }
 
 .nav a:hover,
 .nav-toggle:hover {
-    color: $dirty-yellow;
+    color: $dark-mode-text;
     text-decoration: underline;
 }
 
@@ -233,8 +239,8 @@ body {
 }
 
 .flash-img {
-    background-image: url('tree2.jpg');
- 
+    background-image: url('tree2-dark.jpg');
+
     height: 40px;
 }
 
@@ -242,9 +248,9 @@ body {
 
 .footer {
 
-    background-image: url('footer.png');
+    background-image: url('footer-dark.jpg');
     // overflow: hidden;
-    color: #fff;
+    color: $dark-mode-text;
     // border: 50px;
     // width:768px; margin:0 auto; //det är den här som här boven, width? :/
     max-width: 48em;
@@ -266,6 +272,7 @@ body {
 }
 
 .footer p {
+    color: $dark-mode-text;
     margin: 0;
     padding: 3em 0;
 }
@@ -307,6 +314,7 @@ body {
     .nav ul li a {
         display: block;
         padding: 0.5em 0;
+        color: $dark-mode-text;
     }
 
     .js .nav-toggle {
@@ -325,6 +333,7 @@ body {
     }
 
     .footer p {
+        color: $dark-mode-text;
         padding: 1em 0;
     }
 
@@ -345,7 +354,7 @@ body {
     font-variant-ligatures: common-ligatures;
     text-rendering: optimizeLegibility;
     font-kerning: normal;
-    color: $body-black;
+    color: $dark-mode-text;
 }
 
 p,
@@ -376,13 +385,13 @@ fieldset {
 }
 
 a {
-    color: $link-blue;
     text-decoration: none;
     transition: color 0.2s ease-in;
+    color: $dark-mode-text;
 }
 
 a:hover {
-    color: $body-black;
+    color: $dark-mode-text;
 }
 
 //
@@ -525,7 +534,7 @@ th {
     font-weight: bold;
     text-align: center;
     background: $hr-line-hue;
-    color: $special-grey;
+    color: $dark-mode-body;
 }
 
 td,
@@ -612,6 +621,7 @@ code {
     font-family: monospace;
     font-size: 0.85rem;
     line-height: 1.9824;
+    color: $dark-mode-body;
 }
 
 pre {
@@ -741,25 +751,18 @@ button::-moz-focus-inner {
 
 
 
-
 .landingpage {
     display: grid;
-    background-color: #fff;
-    /*color: black;*/
-
+    background-color: $dark-mode-body;
     gap: 1em 1em;
-    border-color: #000;
-    border: 1px solid #000;
-    /*    padding: 0 1em;*/
-    /*    border-color: black;*/
 }
-   
-  
+
 .landingpage h1 {
     grid-column: span 3;
     justify-self: center;
+    color: #fff;
 }
-  
+
 .kmom-box {
     grid-column: span 1;
     border: 1px solid rgba(0, 0, 0, 0.3);
@@ -768,22 +771,21 @@ button::-moz-focus-inner {
     align-items: center;
     padding: 1em;
 }
-  
+
 .kmom-box a {
     text-decoration: underline;
+    /*color: black;*/
 }
-   
+
 .kmom-box.project {
     grid-column: span 3;
 }
-  
+
 @media(max-width: 767px) {
     .landingpage h1,
     .kmom-box,
     .kmom-box.project {
         grid-column: span 1;
     }
-  
+ 
 }
-
-

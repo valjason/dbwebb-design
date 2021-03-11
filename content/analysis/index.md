@@ -8,36 +8,16 @@ Analysis
 ====================
 
 <div class="kmom-box">
-    <a href="analysis/01_colors"><h1>Kmom1</h1></a>
+    <a href="analysis/01_colors"><h1>Colors</h1></a>
     <p> Något om kursmomentet...</p>
 </div>
 
 <div class="kmom-box">
-    <a href="report/kmom02"><h1>Kmom2</h1></a>
+    <a href="analysis/02_load"><h1>Load</h1></a>
     <p> Något om kursmomentet...</p>
 </div>
 
 <div class="kmom-box">
-    <a href="report/kmom03"><h1>Kmom3</h1></a>
-    <p> Något om kursmomentet...</p>
-</div>
-
-<div class="kmom-box">
-    <a href="report/kmom04"><h1>Kmom4</h1></a>
-    <p> Något om kursmomentet...</p>
-</div>
-
-<div class="kmom-box">
-    <a href="report/kmom05"><h1>Kmom5</h1></a>
-    <p> Något om kursmomentet...</p>
-</div>
-
-<div class="kmom-box">
-    <a href="report/kmom06"><h1>Kmom6</h1></a>
-    <p> Något om kursmomentet...</p>
-</div>
-
-<div class="kmom-box project">
-    <a href="report/kmom10"><h1>Kmom10</h1></a>
+    <a href="analysis/03_design_principles"><h1>Design Principles</h1></a>
     <p> Något om kursmomentet...</p>
 </div>

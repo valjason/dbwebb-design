@@ -1,4 +1,5 @@
 <?php // @codingStandardsIgnoreFile
+/*$_GET["action"] = "";*/
 /**
  * This file is part of Pico. It's copyrighted by the contributors recorded
  * in the version control history of the file, available from the following
@@ -28,7 +29,34 @@ $pico = new Pico(
     'themes/'   // themes dir
 );
 
+/*var_dump($_GET["action"]);*/
+
 // override configuration?
+$pico->setConfig(array(
+    'session' => $_SESSION
+));
+
+if (isset($_GET["action"]) && $_GET["action"] == "theme") {
+    $previousValue = isset($_SESSION["theme"]) ? $_SESSION["theme"] : null;
+
+    if ($previousValue == "dark") {
+        unset($_SESSION["theme"]);
+    } else {
+        $_SESSION["theme"] = "dark";
+    }
+
+    $url = $_SERVER["REQUEST_SCHEME"] . "://" . $_SERVER["HTTP_HOST"] . $_SERVER["PHP_SELF"];
+    $url = preg_replace("/index.php\//", "", $url);
+    header("Location: $url");
+}
+
+if (isset($_GET["action"]) && $_GET["action"] == "session_destroy") {
+    session_destroy();
+    $url = $_SERVER["REQUEST_SCHEME"] . "://" . $_SERVER["HTTP_HOST"] . $_SERVER["PHP_SELF"];
+    $url = preg_replace("/index.php\//", "", $url);
+    header("Location: $url");
+}
+
 //$pico->setConfig(array());
 
 // run application

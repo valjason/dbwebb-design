@@ -16,24 +16,12 @@
     {% if current_page %}
         <link rel="canonical" href="{{ current_page.url }}" />
     {% endif %}
-<!--
+
     <link rel="stylesheet" href="{{ theme_url }}/../shared/css/font-awsome.min.css" type="text/css" />
     <!-- Insert font choice here -->
     {# <link rel="stylesheet" href="{{ theme_url }}/../shared//css/dorid-sans.css" type="text/css" /> #}
     <!-- End -->
     <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
--->
-
-
-    {% if config.session.theme == "dark" %}
-        <link rel="stylesheet" href="{{ theme_url }}/css/style-dark.min.css" type="text/css" />
-    {% else %}
-        <link rel="stylesheet" href="{{ theme_url }}/css/style.min.css" type="text/css" />
-    {% endif %}
- 
-
-
-
 
 </head>
 
@@ -72,19 +60,15 @@
                 </div>
             </div>
             <div class="flash-region">
-     <!--         <img class="flash-img" src="{{ base_url }}/image/tree2-dark.jpg?sc=banner1&a=20,0,0,0">-->
-            <div class="flash-img"></div>
-
-            <div class="flash-img"></div>
-            <div class="flash-img"></div>
+              <img class="flash-img" src="{{ base_url }}/image/tree2.jpg?sc=banner1&a=20,0,0,0">
             </div>
-           <!-- <div class="mePic">
-                <img src="{{ base_url }}/image/tree2-dark.jpg?sc=banner1&a=20,0,0,0">
+            <div class="mePic">
+                <img src="{{ base_url }}/image/tree2.jpg?sc=banner1&a=20,0,0,0">
             </div>
             <div class="flash-region">
-              <img class="flash-img" src="{{ base_url }}/image/tree2-dark.jpg?sc=banner1&a=70,0,0,0">
+              <img class="flash-img" src="{{ base_url }}/image/tree2.jpg?sc=banner1&a=70,0,0,0">
             </div>
--->
+
 
             <!-- <div class="flash-region">
               <img class="flash-img" src="{{ base_url }}/image/me.jpg?sc=banner1&a=70,0,-10,-10">

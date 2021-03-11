@@ -7111,6 +7111,10 @@ readers do not read off random characters that represent icons */
   padding: 0 1em;
 }
 
+.html {
+  background-color: black;
+}
+
 .landingpage h1 {
   grid-column: span 3;
   justify-self: center;

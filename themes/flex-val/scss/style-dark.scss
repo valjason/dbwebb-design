@@ -1,5 +1,5 @@
 
-@import '../../shared/scss/base';
+@import '../../shared/scss/base-dark';
 @import '../../shared/fontawesome/scss/fontawesome';
 $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/brands';
@@ -25,6 +25,10 @@ h6, {
 
 p {
     font-family: 'Architects Daughter', cursive;
+}
+
+a {
+    color: $dark-mode-text;
 }
 
 .iframe-container {
