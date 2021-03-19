@@ -18,6 +18,6 @@ Analysis
 </div>
 
 <div class="kmom-box">
-    <a href="analysis/03_design_principles"><h1>Design Principles</h1></a>
+    <a href="analysis/03_design_principles"><h1>Design<br> Principles</h1></a>
     <p> Något om kursmomentet...</p>
 </div>

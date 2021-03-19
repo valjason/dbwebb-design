@@ -737,8 +737,9 @@ button::-moz-focus-inner {
 
 
 
-
-
+.keeptogether {
+    width: 750px;
+}
 
 
 
@@ -746,7 +747,6 @@ button::-moz-focus-inner {
     display: grid;
     background-color: #fff;
     /*color: black;*/
-
     gap: 1em 1em;
     border-color: #000;
     border: 1px solid #000;
