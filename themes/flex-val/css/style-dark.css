@@ -527,13 +527,14 @@ body {
 
 .nav a,
 .nav-toggle {
-  color: #333;
+  color: #fff;
 }
 
 .nav .active a,
 .nav a:hover,
 .nav-toggle:hover {
   color: #fff;
+  text-decoration: underline;
 }
 
 .nav a:hover,
@@ -574,6 +575,11 @@ body {
 
 .footer a:hover {
   color: #fff;
+}
+
+.fieldSetCustomColor {
+  color: #fff;
+  background-color: #292929;
 }
 
 .footer p {
@@ -908,6 +914,7 @@ blockquote {
 label,
 fieldset legend {
   font-weight: bold;
+  background-color: #292929;
 }
 
 input:not([type=checkbox]):not([type=radio]),
@@ -918,7 +925,7 @@ fieldset,
 fieldset legend {
   border: 1px solid #ccc;
   border-radius: 0.3em;
-  background: #fff;
+  /*background: #fff;*/
   transition: none 0.2s ease-in;
   transition-property: border-color, background, box-shadow;
 }
@@ -936,8 +943,8 @@ input:focus:not([type=checkbox]):not([type=radio]),
 button:focus,
 select:focus,
 textarea:focus {
-  border-color: #2eae9b;
-  box-shadow: 0 0 8px #2eae9b;
+  border-color: #000080;
+  box-shadow: 0 0 8px #000080;
 }
 
 input:focus,

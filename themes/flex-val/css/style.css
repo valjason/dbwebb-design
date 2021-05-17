@@ -678,7 +678,7 @@ fieldset {
 }
 
 a {
-  color: #2eae9b;
+  color: #000080;
   text-decoration: none;
   transition: color 0.2s ease-in;
 }
@@ -929,8 +929,8 @@ input:focus:not([type=checkbox]):not([type=radio]),
 button:focus,
 select:focus,
 textarea:focus {
-  border-color: #2eae9b;
-  box-shadow: 0 0 8px #2eae9b;
+  border-color: #000080;
+  box-shadow: 0 0 8px #000080;
 }
 
 input:focus,
@@ -984,6 +984,10 @@ input::-moz-focus-inner,
 button::-moz-focus-inner {
   border: 0;
   padding: 0;
+}
+
+.keeptogether {
+  width: 750px;
 }
 
 .landingpage {
