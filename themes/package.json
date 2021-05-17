@@ -3,29 +3,21 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-     "test": "echo \"Error: no test specified\" && exit 1",
-      "lint": "stylelint \"**/*.scss\"",
-  
-      "watch": "sass flex-val/scss/style.scss:flex-val/css/style.css flex-val/scss/style-dark.scss:flex-val/css/style-dark.css --no-source-map --watch",
-      "watch-min": "sass flex-val/scss/style.scss:flex-val/css/style.min.css flex-val/scss/style-dark.scss:flex-val/css/style-dark.min.css --no-source-map --watch --style compressed",
-      "style": "npm run style-light && npm run style-dark && npm run report-dark && npm run report-light",
-      "style-min": "npm run style-light-min && npm run style-dark-min && npm run report-dark && npm run report-light",
-  
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "stylelint \"**/*.scss\"",
+    "watch": "sass flex-val/scss/style.scss:flex-val/css/style.css flex-val/scss/style-dark.scss:flex-val/css/style-dark.css --no-source-map --watch",
+    "watch-min": "sass flex-val/scss/style.scss:flex-val/css/style.min.css flex-val/scss/style-dark.scss:flex-val/css/style-dark.min.css --no-source-map --watch --style compressed",
+    "style": "npm run style-light && npm run style-dark && npm run report-dark && npm run report-light",
+    "style-min": "npm run style-light-min && npm run style-dark-min && npm run report-dark && npm run report-light",
     "style-dark": "sass flex-val/scss/style-dark.scss flex-val/css/style-dark.css --no-source-map",
     "style-dark-min": "sass flex-val/scss/style-dark.scss flex-val/css/style-dark.min.css --no-source-map --style compressed",
-  
     "style-light": "sass flex-val/scss/style.scss flex-val/css/style.css --no-source-map",
     "style-light-min": "sass flex-val/scss/style.scss flex-val/css/style.min.css --no-source-map --style compressed",
-
-  
     "report-dark": "sass flex-val/scss/report-dark.scss flex-val/css/report-dark.css --no-source-map",
     "report-dark-min": "sass flex-val/scss/report-dark.scss flex-val/css/report-dark.min.css --no-source-map --style compressed",
-  
     "report-light": "sass flex-val/scss/report.scss flex-val/css/report.css --no-source-map",
     "report-light-min": "sass flex-val/scss/report.scss flex-val/css/report.min.css --no-source-map --style compressed"
- 
-
- },
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
