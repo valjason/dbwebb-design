@@ -211,13 +211,14 @@ body {
 
 .nav a,
 .nav-toggle {
-    color: $special-grey;
+    color: #fff;
 }
 
 .nav .active a,
 .nav a:hover,
 .nav-toggle:hover {
     color: $dark-mode-text;
+    text-decoration: underline;
 }
 
 .nav a:hover,
@@ -269,6 +270,13 @@ body {
 
 .footer a:hover {
     color: #fff;
+}
+
+.fieldSetCustomColor {
+
+color: #fff;
+background-color: $dark-mode-body;
+
 }
 
 .footer p {
@@ -655,6 +663,7 @@ blockquote {
 label,
 fieldset legend {
     font-weight: bold;
+    background-color: $dark-mode-body;
 }
 
 input:not([type='checkbox']):not([type='radio']),
@@ -666,7 +675,7 @@ fieldset
 legend {
     border: 1px solid #ccc;
     border-radius: 0.3em;
-    background: #fff;
+    /*background: #fff;*/
     transition: none 0.2s ease-in;
     transition-property: border-color, background, box-shadow;
 }

@@ -26,7 +26,7 @@ Use PHP framework to create and design website
 
 CM 01
 ----
-<h5>Framework, content and style</h5>
+##Framework, content and style
 
 This part introduced Pico which is a framework that facilitates creating websites. It gives you a base on which you can work on.
 
@@ -36,29 +36,29 @@ The difficulties I've encountered with Pico is for one, the image not being read
 
 CM 02
 ----
-<h5>SASS and Typography</h5>
+##SASS and Typography
 
 I had some issues installing SASS but it got solved in the end with some help on the internet.
 
 CM 03
 ----
-<h5>Layout</h5>
+##Layout
 
 CM 04
 ----
-<h5>Color</h5>
+##Color
 
 CM 05
 ----
-<h5>Picture</h5>
+##Picture
 
 CM 06
 ----
-<h5>Availability and performance</h5>
+##Availability and performance
 
 CM 07/10
 ----
-<h5>Final project</h5>
+##Final project
 
 
 
@@ -67,20 +67,46 @@ Forms
 
 Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<fieldset>
+<fieldset class="fieldSetCustomColor">
     <legend>Legend</legend>
     <label>Label</label>
-    <input type="checkbox"/>
-    <input type="checkbox" checked="checked"/>
-    <input type="radio"/>
-    <input type="radio" checked="checked"/><br/>
-    <input type="text" value="Lorem ipsum"/>
-    <input type="password" value="Ut enim"/><br/>
+
+    <label for="test1">TEST</label>
+
+    <input type="checkbox" id="test1"/>
+
+    <label for="test2">TEST</label>
+
+    <input type="checkbox" checked="checked" id="test2"/>
+
+
+    <label for="test3">TEST</label>
+
+
+    <input type="radio" id="test3"/>
+
+    <label for="test4">TEST</label>
+    <input type="radio" checked="checked" id="test4"/><br/>
+
+
+
+    <label for="test5">TEST</label>
+
+    <input type="text" value="Lorem ipsum" id="test5"/>
+
+
+    <label for="test6">TEST</label>
+
+    <input type="password" value="Ut enim" id="test6"/><br/>
     <input type="submit" value="Submit"/>
     <input type="reset" value="Reset"/>
     <input type="button" value="Button (Input)"/>
     <button>Button</button><br/>
-    <textarea>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua<br/>.</textarea><br/>
+
+
+    <label for="test7">TEST</label>
+
+    <textarea id="test7">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua<br/>.</textarea><br/>
     <select>
         <option>Lorem ipsum</option>
         <option>Ut enim</option>

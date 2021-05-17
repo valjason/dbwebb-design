@@ -14,7 +14,11 @@ Gallery
         ./../portfolio/image/pexels/pexels-photo-1975781_HQ.jpeg?w=150&h=350&crop-to-fit 200w"
 
         sizes="(max-width: 600px) 350px,
-            480px">
+            480px"
+
+
+alt="pinkeyebrows"
+>
 
 
 </a>
@@ -27,7 +31,12 @@ Gallery
         ./../portfolio/image/pexels/pexels-photo-1983917_HQ.jpeg?w=150&h=350&crop-to-fit 200w"
         
         sizes="(max-width: 600px) 350px,
-            480px">
+            480px"
+
+
+alt="pinkeyebrows"
+
+>
 </a>
 </div>
 
@@ -37,7 +46,11 @@ Gallery
 <img srcset="./../portfolio/image/pexels/pexels-photo-2169500.jpeg?w=150&h=350&crop-to-fit 480w,
         ./../portfolio/image/pexels/pexels-photo-2169500.jpeg?w=150&h=350&crop-to-fit 200w" 
         sizes="(max-width: 600px) 350px,
-            480px">
+            480px"
+
+
+alt="pinkeyebrows"
+>
 </a>
 </div>
 
@@ -48,6 +61,10 @@ Gallery
 ./../portfolio/image/pexels/pexels-photo-2703463.jpeg?w=150&h=350&crop-to-fit 200w"
     sizes="(max-width: 600px) 350px,
             480px"
+
+
+
+alt="pinkeyebrows"
 >
 </a>
 </div>
@@ -60,7 +77,12 @@ Gallery
     sizes="(max-width: 600px) 350px,
             480px
 
-">
+"
+
+
+alt="pinkeyebrows"
+
+>
 </a>
 </div>
 
@@ -73,7 +95,12 @@ Gallery
             480px
 
 
-">
+"
+
+
+alt="pinkeyebrows"
+
+>
 </a>
 
 </div>
@@ -86,7 +113,12 @@ Gallery
     sizes="(max-width: 600px) 350px,
         480px
 
-" >
+
+"
+
+alt="pinkeyebrows"
+
+ >
 </a>
 </div>
 
@@ -97,6 +129,9 @@ Gallery
  ./../portfolio/image/pexels/pexels-photo-6338278.jpeg?w=150&h=350&crop-to-fit 200w "
     sizes="(max-width: 600px) 350px,
         480px"
+
+alt="pinkeyebrows"
+
 >
 </a>
 </div>
@@ -108,7 +143,7 @@ Gallery
 ./../portfolio/image/pexels/pexels-photo-7035537.jpeg?w=150&h=350&crop-to-fit 200w"
     sizes="(max-width: 600px) 350px,
         480px"
-
+alt="pinkeyebrows"
  >
 </a>
 </div>
