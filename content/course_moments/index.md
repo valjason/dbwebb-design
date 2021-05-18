@@ -44,17 +44,25 @@ CM 03
 ----
 ##Layout
 
+This taught me to use flexbox as well as other tools for managing layout on websites.
+
 CM 04
 ----
 ##Color
+
+Here I learned some important tools for managing colors for our website.
 
 CM 05
 ----
 ##Picture
 
+This moment taught me how to create a simple gallery for a website.
+
 CM 06
 ----
 ##Availability and performance
+
+Here I've made an performance analysis of three websites, learned to use Google Lighthouse and other tools for performance check as well as availability checks.
 
 CM 07/10
 ----
