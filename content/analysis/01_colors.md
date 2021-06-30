@@ -51,7 +51,7 @@ Studerar man sedan Filmstadens hemsida så är den till skillnad från övriga a
 
 Referenser
 ----------------------
-Adobe Color:https://color.adobe.com/sv/create/color-wheel  
+Adobe Color: https://color.adobe.com/sv/create/color-wheel  
 
 Färgpsykologi: https://www.empower-yourself-with-color-psychology.com/  
 
